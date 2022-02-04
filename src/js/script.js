@@ -64,6 +64,35 @@ document.addEventListener('DOMContentLoaded', async () => {
     createObject();
 
     objectList[0].populateFeature();
+
+    postRegistration = async () =>{
+        
+        const url = 'https://test-api.codingbootcamp.cz/api/f6d612fc/events/EVENT_ID/registrations';
+        
+        
+        const myData = {
+            'event_Id': ocument.querySelector('#first_name').value,
+            'name': document.querySelector('#first_name').value,
+            'surname': document.querySelector('#last_name').value,
+            'email': document.querySelector('#email').value,
+            'phone_number': document.querySelector('#phone').value,
+            'check': document.querySelector('#phone').value,
+        }
+        
+        const init = {
+            'method': 'POST',
+            'body': JSON.stringify(myData),
+            'headers': {
+                'Content-Type': 'application/json'
+            }
+        }
+        const myResponse = await fetch(url, init);
+
+        const myUsableResponse = await myResponse.json()
+        console.log(myUsableResponse)
+    }
+
+
     
 
     //before appending of feature content first clear the existing content through innerHTML = ''

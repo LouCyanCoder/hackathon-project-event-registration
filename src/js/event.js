@@ -43,8 +43,12 @@ export class Event {
         evetnDesc.textContent = this.description;
 
         //check whether attaching register button ID should be done here
-        // const btnPost = document.querySelector('.btn--register');
-        // btnPost.id = '#btnReg'+this.id;
+        const btnPost = document.querySelector('.btn--register');
+        btnPost.id = 'btnReg'+this.id;
+        
+        // btnPost.addEventListener('click',() => {
+        //     document.querySelector('#myModal').classList
+        // } )
 
         }
 
