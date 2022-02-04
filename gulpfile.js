@@ -139,7 +139,7 @@ function publishCss(done, for_production = false) {
         }
         return path;
     }))
-        .pipe(cache('css'))
+        // .pipe(cache('css'))
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
 
