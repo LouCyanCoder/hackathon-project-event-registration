@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     //call create object with displaying event boxes
     createObject();
 
-    objectList[0].populateFeature();
+    objectList[1].populateFeature();
 
     postRegistration = async () =>{
         
