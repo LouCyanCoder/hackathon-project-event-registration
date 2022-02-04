@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -23,7 +22,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-=======
 import { Event } from './event.js'
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -70,4 +68,3 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     //before appending of feature content first clear the existing content through innerHTML = ''
 })
->>>>>>> 2ecb0ffb99a1024bc51eda0c88b09accb87498e6
