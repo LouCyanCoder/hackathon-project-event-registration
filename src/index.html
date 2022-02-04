@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events in Prague</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <script defer src="/js/script.js"></script>
     <script defer src="/js/script_modalWindow.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Events in Prague</h1>
+      <h1>Events in Prague</h1>
 
-        <nav>
-            
-                <a href="#">Home</a>
-                <a href="#">About</a>
-            
-        </nav>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+      </nav>
     </header>
 
     <!-- main section -->
-<main>
-
-    <section class="container">
-
-<!-- container for featured event -->
+    <main>
+      <section class="container">
+        <!-- container for featured event -->
 
         <article class="container__feat">
-            <div class="container__feat--heading"><h2>Featured event</h2></div>
+          <div class="container__feat--heading"><h2>Featured event</h2></div>
 
-            <div class="container__feat--img"><img src="" alt=""></div>
+          <div class="container__feat--img"><img src="" alt="" /></div>
 
-            <div class="container__feat--content">
-                <h2>Event name</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum placeat eaque repellendus, voluptatem, neque veniam reprehenderit ea saepe, quibusdam dolores nemo cupiditate. Soluta cum iusto obcaecati. Minus voluptate beatae voluptatum, adipisci iste quam porro soluta officia. Magnam, totam iusto dolore veritatis porro, quos nostrum culpa reprehenderit quo rerum, labore voluptatem!</p>
-                <button class="btn--register">Register</button>
-            </div>
-
+          <div class="container__feat--content">
+            <h2>Event name</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+              placeat eaque repellendus, voluptatem, neque veniam reprehenderit
+              ea saepe, quibusdam dolores nemo cupiditate. Soluta cum iusto
+              obcaecati. Minus voluptate beatae voluptatum, adipisci iste quam
+              porro soluta officia. Magnam, totam iusto dolore veritatis porro,
+              quos nostrum culpa reprehenderit quo rerum, labore voluptatem!
+            </p>
+            <button class="btn--register" id="myBtn">Register</button>
+          </div>
         </article>
-
 
         <!-- container for other events -->
         <article class="container__events">
+          <div class="container__events--box">
+            <h3>Event name</h3>
+            <button class="btn-more">More</button>
+          </div>
 
-            <div class="container__events--box">
-                <h3>Event name</h3>
-                <button class="btn-more">More</button>
-            </div>
+          <div class="container__events--box">
+            <h3>Event name</h3>
+            <button class="btn--more">More</button>
+          </div>
 
-            <div class="container__events--box">
-                <h3>Event name</h3>
-                <button class="btn--more">More</button>
-            </div>
-
-            <div class="container__events--box">
-                <h3>Event name</h3>
-                <button class="btn--more">More</button>
-            </div>
-            
+          <div class="container__events--box">
+            <h3>Event name</h3>
+            <button class="btn--more">More</button>
+          </div>
         </article>
+      </section>
 
-    </section>
-
-    <button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
-</main>
-
-
-
-</body>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Please submit following form to enter the event</h2>
+          </div>
+          <div class="modal-body">
+            <form action="" class="modal-content-form">
+              <label for="first_name">Name</label>
+              <input id="first_name" type="text" value="" />
+              <label for="last_name">Surname</label>
+              <input id="last_name" type="text" value="" />
+              <label for="email">Email</label>
+              <input id="email" type="email" value="" />
+              <label for="phone">Phone number</label>
+              <input type="number" id="phone" value="" />
+              <label for="check"
+                >I confirm that I am eligible to participate</label
+              >
+              <input type="checkbox" id="check" />
+              <input class="button" type="submit" value="SUBMIT" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <h3>Thank you</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
